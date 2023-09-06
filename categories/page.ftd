@@ -4,6 +4,8 @@
 
 -- component page:
 optional caption site-name:
+optional string site-url:
+optional ftd.image-src site-logo:
 string github-url:
 ftd.type-data types: $inherited.types
 ftd.color-scheme colors: $cs.main
@@ -23,6 +25,8 @@ background.solid: $inherited.colors.background.base
 -- header.category-header:
 github-url: $page.github-url
 site-name: $page.site-name
+site-url: $page.site-url
+site-logo: $page.site-logo
 
 -- obj:
 for: obj in $page.uis

@@ -1,6 +1,8 @@
 -- component category-header:
 caption github-url:
-optional string site-name:
+optional caption site-name:
+optional string site-url:
+optional ftd.image-src site-logo:
 
 
 -- header: $category-header.site-name
@@ -32,6 +34,8 @@ width.fixed.px: 24
 
 -- component header:
 optional caption site-name:
+optional string site-url:
+optional ftd.image-src site-logo:
 children uis:
 
 -- ftd.row:
@@ -42,10 +46,22 @@ padding-horizontal.px: 20
 spacing if { header.site-name != NULL }: space-between
 align-content: right
 
+-- ftd.row:
+spacing.fixed.px: 28
+link: $header.site-url
+
+-- ftd.image:
+src: $header.site-logo
+width.fixed.px: 30
+if: { header.site-logo != NULL }
+
 -- ftd.text: $header.site-name
 role: $inherited.types.heading-small
 color: $inherited.colors.text-strong
 if: { header.site-name != NULL }
+
+-- end: ftd.row
+
 
 -- ftd.row:
 spacing.fixed.px: 28
