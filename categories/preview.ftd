@@ -1,0 +1,43 @@
+-- component preview:
+optional caption title:
+optional string subtitle:
+children uis:
+
+-- ftd.column:
+padding.px: 40
+color: $inherited.colors.text-strong
+background.solid: $inherited.colors.background.step-2
+border-radius.px: 20
+width: fill-container
+
+-- ftd.text: $preview.title
+if: { preview.title != NULL }
+role: $inherited.types.heading-small
+margin-bottom.px: 8
+
+-- ftd.text: $preview.subtitle
+if: { preview.subtitle != NULL }
+role: $inherited.types.copy-small
+margin-bottom.px: 16
+
+-- obj:
+for: obj in $preview.uis
+
+-- end: ftd.column
+
+-- end: preview
+
+
+
+-- component image:
+ftd.image-src src:
+optional ftd.resizing width:
+optional ftd.resizing height:
+
+-- ftd.image:
+src: $image.src
+width: fill-container
+height if { image.height == NULL} : fill-container
+height: $image.height
+
+-- end: image

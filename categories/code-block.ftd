@@ -7,18 +7,18 @@ string lang: ftd
 
 -- ftd.column:
 width: fill-container
+spacing.fixed.px: 28
 
 -- ftd.column:
 width: fill-container
-background.solid: $inherited.colors.custom.two
-padding.px: 40
 border-radius.px: 5
-min-height.fixed.px: 300
+max-height.fixed.px: 300
 children: $code-with-preview.preview
 
 -- end: ftd.column
 
 -- cb.code:
+max-height.fixed.px: 300
 lang: $code-with-preview.lang
 
 $code-with-preview.code
