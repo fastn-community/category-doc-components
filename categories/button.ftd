@@ -70,6 +70,7 @@ padding-vertical.rem: 0.75
 padding-horizontal.rem: 1
 border-color: $button.border-color
 border-width.px: 1
+border-radius.px: 5
 align-content: center
 background: $button.background
 background if { button.hover }: $button.on-hover-background
