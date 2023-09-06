@@ -1,0 +1,35 @@
+-- import: fastn-community.github.io/category-doc-components/categories/header
+-- import: fastn-community.github.io/dark-mode-switcher as dms
+
+-- component page:
+optional caption site-name:
+string github-url:
+ftd.type-data types: $inherited.types
+ftd.color-scheme colors: $inherited.colors
+children uis:
+
+-- ftd.document:
+colors: $page.colors
+types: $page.types
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+background.solid: $inherited.colors.background.base
+
+
+-- header.category-header:
+github-url: $page.github-url
+site-name: $page.site-name
+
+-- obj:
+for: obj in $page.uis
+
+-- dms.dark-mode-switcher-float:
+
+-- end: ftd.column
+
+-- end: ftd.document
+
+-- end: page

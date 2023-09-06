@@ -1,0 +1,59 @@
+-- import: fastn-community.github.io/category-doc-components/categories/button
+
+-- component hero-section:
+caption title:
+optional body description:
+optional string subtitle:
+optional string cta-primary-text:
+optional string cta-primary-link:
+optional string cta-secondary-text:
+optional string cta-secondary-link:
+
+-- ftd.row:
+width: fill-container
+color: $inherited.colors.text
+spacing.fixed.px: 50
+padding-horizontal.px: 65
+padding-vertical.px: 50
+
+-- ftd.column:
+spacing.fixed.px: 20
+width.fixed.percent: 40
+
+-- ftd.text: $hero-section.title
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+
+-- ftd.text: $hero-section.subtitle
+role: $inherited.types.fine-print
+
+-- end: ftd.column
+
+
+-- ftd.column:
+spacing.fixed.px: 20
+width.fixed.percent: 50
+
+-- ftd.text: $hero-section.description
+role: $inherited.types.copy-regular
+if: { hero-section.description != NULL }
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- button.primary-button: $hero-section.cta-primary-text
+link: $hero-section.cta-primary-link
+if: { hero-section.cta-primary-text != NULL }
+
+-- button.secondary-button: $hero-section.cta-secondary-text
+link: $hero-section.cta-secondary-link
+if: { hero-section.cta-secondary-text != NULL }
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+
+-- end: hero-section

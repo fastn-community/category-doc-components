@@ -3,16 +3,9 @@
 -- fastn.package: fastn-community.github.io/category-doc-components
 favicon: /-/fastn-community.github.io/category-doc-components/favicon.ico
 
--- fastn.dependency: fastn-community.github.io/doc-site as doc-site
--- fastn.dependency: fastn-community.github.io/footer
--- fastn.dependency: fastn-community.github.io/roboto-typography
 
--- fastn.auto-import: fastn-community.github.io/category-doc-components/FASTN/ds
+-- fastn.dependency: fastn-community.github.io/code-block
+-- fastn.dependency: fastn-community.github.io/dark-mode-switcher
+
+
 -- fastn.auto-import: fastn-community.github.io/category-doc-components/assets
--- fastn.auto-import: doc-site
-
--- fastn.sitemap:
-
-# Home: index.html
-
-- Right Sidebar Sample: /sidebar/
