@@ -1,11 +1,12 @@
 -- import: fastn-community.github.io/category-doc-components/categories/header
 -- import: fastn-community.github.io/dark-mode-switcher as dms
+-- import: fastn-community.github.io/category-doc-components/categories/color-scheme as cs
 
 -- component page:
 optional caption site-name:
 string github-url:
 ftd.type-data types: $inherited.types
-ftd.color-scheme colors: $inherited.colors
+ftd.color-scheme colors: $cs.main
 children uis:
 
 -- ftd.document:
