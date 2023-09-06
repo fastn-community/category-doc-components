@@ -35,23 +35,24 @@ items: $testimonial-list
 
 
 
+
+
+
 -- component slider:
 children items:
 integer max: $length(a = $slider.items)
 integer $current-slide: 0
-
 
 -- ftd.row:
 spacing.fixed.px: 24
 padding-horizontal.px: 12
 align-content: center
 width: fill-container
-max-width.fixed.px: 1080
 align-self: center
 margin-top.px: 40
 
 -- ftd.text: ◀️
-$on-click$: $clamp($a = $slider.current-slide, by = -1, min = 0, max = $slider.max)
+$on-click$: $decrement($a = $slider.current-slide, n = $slider.max)
 role: $inherited.types.heading-large
 
 -- testimonial-loop:
@@ -67,6 +68,15 @@ role: $inherited.types.heading-large
 -- end: ftd.row
 
 -- end: slider
+
+
+
+
+
+
+
+
+
 
 
 
@@ -96,7 +106,24 @@ width: fill-container
 
 
 
+
+
+
+
+
+
+
+
 -- integer length(a):
 ftd.ui list a:
 
 len(a)
+
+
+
+-- void decrement(a,n):
+integer $a:
+integer n:
+js: [$assets.files.utils.js]
+
+clampDecrement(a,n)
