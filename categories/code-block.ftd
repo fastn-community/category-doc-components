@@ -10,6 +10,10 @@ width: fill-container
 
 -- ftd.column:
 width: fill-container
+background.solid: $inherited.colors.custom.two
+padding.px: 40
+border-radius.px: 5
+min-height.fixed.px: 300
 children: $code-with-preview.preview
 
 -- end: ftd.column
