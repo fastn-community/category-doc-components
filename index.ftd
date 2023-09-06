@@ -1,7 +1,14 @@
 -- import: fastn-community.github.io/category-doc-components/categories/page
+export: page
+
 -- import: fastn-community.github.io/category-doc-components/categories/section
+export: hero-section
+
 -- import: fastn-community.github.io/category-doc-components/categories/carousel
+export: slider
+
 -- import: fastn-community.github.io/category-doc-components/categories/code-block as cb
+export: code-with-preview
 
 
 
