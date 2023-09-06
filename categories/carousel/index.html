@@ -16,7 +16,7 @@ let __fastn_package_name__ = "fastn-community.github.io/category-doc-components"
 <script src="prism-8FE3A42AD547E2DBBC9FE16BA059F8F1870D613AD0C5B0B013D6205B72A62BAF.js"></script>
 <script src="default-D806A8ECC69EDAFA81A440D82ECE5BE3005B5EED4293BD0A2866EAB42BF4F587.js"></script>
 <link rel="stylesheet" href="prism-73F718B9234C00C5C14AB6A11BF239A103F0B0F93B69CD55CB5C6530501182EB.css">
-
+<script src="-/fastn-community.github.io/category-doc-components/utils.js"></script>
 
 
 <style>
@@ -312,28 +312,27 @@ margin-block-end: 0.67em
 </style>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_row __as-3 __w-1 __pl-4 __pr-5 __mt-6 __mxw-7 __jc-8 __ali-9 __g-10"><div data-id="4" class="__cur-11 __rl-12">◀️</div><comment data-id="5"></comment><comment data-id="6"></comment><div data-id="7" class="ft_column __w-1 __p-13 __br-14 __c-15 __bgc-16"><div data-id="8">Hello</div></div><comment data-id="9"></comment><div data-id="10" class="__cur-11 __rl-12">▶️</div></div></div></body><style id="styles">
+<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_row __as-3 __w-1 __pl-4 __pr-5 __mt-6 __jc-7 __ali-8 __g-9"><div data-id="4" class="__cur-10 __rl-11">◀️</div><comment data-id="5"></comment><comment data-id="6"></comment><div data-id="7" class="ft_column __w-1 __p-12 __br-13 __c-14 __bgc-15"><div data-id="8">Hello</div></div><comment data-id="9"></comment><div data-id="10" class="__cur-10 __rl-11">▶️</div></div></div></body><style id="styles">
 .__w-1 { width: 100%; }
 .__h-2 { height: 100%; }
 .__as-3 { align-self: center; }
 .__pl-4 { padding-left: 12px; }
 .__pr-5 { padding-right: 12px; }
 .__mt-6 { margin-top: 40px; }
-.__mxw-7 { max-width: 1080px; }
-.__jc-8 { justify-content: center; }
-.__ali-9 { align-items: center; }
-.__g-10 { gap: 24px; }
-.__cur-11 { cursor: pointer; }
-.__rl-12 {  font-family: sans-serif; font-size: 50px; font-weight: 400; line-height: 65px; }
-body.mobile .__rl-12 {  font-family: sans-serif; font-size: 36px; font-weight: 400; line-height: 54px; }
-.__p-13 { padding: 40px; }
-.__br-14 { border-radius: 20px; }
-.__c-15 { color: #e7e7e4 !important; }
-body.dark .__c-15 { color: #18181b !important; }
-.__c-15:visited { color: #e7e7e4 !important; }
-body.dark  .__c-15:visited { color: #18181b !important; }
-.__bgc-16 { background-color: #c9cece; }
-body.dark .__bgc-16 { background-color: #585656; }
+.__jc-7 { justify-content: center; }
+.__ali-8 { align-items: center; }
+.__g-9 { gap: 24px; }
+.__cur-10 { cursor: pointer; }
+.__rl-11 {  font-family: sans-serif; font-size: 50px; font-weight: 400; line-height: 65px; }
+body.mobile .__rl-11 {  font-family: sans-serif; font-size: 36px; font-weight: 400; line-height: 54px; }
+.__p-12 { padding: 40px; }
+.__br-13 { border-radius: 20px; }
+.__c-14 { color: #e7e7e4 !important; }
+body.dark .__c-14 { color: #18181b !important; }
+.__c-14:visited { color: #e7e7e4 !important; }
+body.dark  .__c-14:visited { color: #18181b !important; }
+.__bgc-15 { background-color: #c9cece; }
+body.dark .__bgc-15 { background-color: #585656; }
 </style>
 <script>
 (function() {
@@ -366,26 +365,19 @@ __fastn_package_name__ = __fastn_super_package_name__;
 }
 }
 global["fastn_community_github_io_category_doc_components_categories_carousel___length"] = fastn_community_github_io_category_doc_components_categories_carousel___length;
-let fastn_community_github_io_category_doc_components_categories_carousel___clamp = function (args)
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_assets__files.utils.js", "-/fastn-community.github.io/category-doc-components/utils.js");
+let fastn_community_github_io_category_doc_components_categories_carousel___decrement = function (args)
 {
 let __fastn_super_package_name__ = __fastn_package_name__;
 __fastn_package_name__ = "fastn_community_github_io_category_doc_components";
 try {
-let __args__ = {
-by: 1,
-min: 0,
-max: 5,
-...args
-};
-let fastn_utils_val___args___a = fastn_utils.clone((((fastn_utils.getter(__args__.a) - fastn_utils.getter(__args__.min)) + fastn_utils.getter(__args__.by)) % (fastn_utils.getter(__args__.max) - fastn_utils.getter(__args__.min))) + fastn_utils.getter(__args__.min));
-if (!fastn_utils.setter(__args__.a, fastn_utils_val___args___a)) {
-__args__.a = fastn_utils_val___args___a;
-}
+let __args__ = args;
+return (clampDecrement(__args__.a, __args__.n));
 } finally {
 __fastn_package_name__ = __fastn_super_package_name__;
 }
 }
-global["fastn_community_github_io_category_doc_components_categories_carousel___clamp"] = fastn_community_github_io_category_doc_components_categories_carousel___clamp;
+global["fastn_community_github_io_category_doc_components_categories_carousel___decrement"] = fastn_community_github_io_category_doc_components_categories_carousel___decrement;
 let fastn_community_github_io_category_doc_components_categories_carousel___testimonial_loop = function (parent, inherited, args)
 {
 let __fastn_super_package_name__ = __fastn_package_name__;
@@ -425,6 +417,26 @@ __fastn_package_name__ = __fastn_super_package_name__;
 }
 }
 global["fastn_community_github_io_category_doc_components_categories_carousel___testimonial_loop"] = fastn_community_github_io_category_doc_components_categories_carousel___testimonial_loop;
+let fastn_community_github_io_category_doc_components_categories_carousel___clamp = function (args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "fastn_community_github_io_category_doc_components";
+try {
+let __args__ = {
+by: 1,
+min: 0,
+max: 5,
+...args
+};
+let fastn_utils_val___args___a = fastn_utils.clone((((fastn_utils.getter(__args__.a) - fastn_utils.getter(__args__.min)) + fastn_utils.getter(__args__.by)) % (fastn_utils.getter(__args__.max) - fastn_utils.getter(__args__.min))) + fastn_utils.getter(__args__.min));
+if (!fastn_utils.setter(__args__.a, fastn_utils_val___args___a)) {
+__args__.a = fastn_utils_val___args___a;
+}
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_category_doc_components_categories_carousel___clamp"] = fastn_community_github_io_category_doc_components_categories_carousel___clamp;
 let fastn_community_github_io_category_doc_components_categories_carousel___slider = function (parent, inherited, args)
 {
 let __fastn_super_package_name__ = __fastn_package_name__;
@@ -453,18 +465,15 @@ parenti0.setProperty(fastn_dom.PropertyKind.AlignSelf, fastn_dom.AlignSelf.Cente
 parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
 parenti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(12), inherited);
 parenti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(40), inherited);
-parenti0.setProperty(fastn_dom.PropertyKind.MaxWidth, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(1080)), inherited);
 parenti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
 parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(24)), inherited);
 parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
 let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
 rooti0.setProperty(fastn_dom.PropertyKind.StringValue, "◀️", inherited);
 rooti0.addEventHandler(fastn_dom.Event.Click, function () {
-fastn_community_github_io_category_doc_components_categories_carousel___clamp({
+fastn_community_github_io_category_doc_components_categories_carousel___decrement({
 a: __args__.current_slide,
-by: - 1,
-min: 0,
-max: __args__.max,
+n: __args__.max,
 }, rooti0);
 });
 rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_large"), inherited);
