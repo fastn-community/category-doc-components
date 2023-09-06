@@ -1,0 +1,35 @@
+-- import: fastn-community.github.io/category-doc-components/categories/details
+
+-- component overview:
+caption title:
+optional body body:
+
+-- ftd.column:
+width: fill-container
+color: $inherited.colors.text
+
+-- ftd.text: $overview.title
+role: $inherited.types.heading-small
+color: $inherited.colors.text-strong
+border-color: $inherited.colors.border
+padding-bottom.px: 12
+border-bottom-width.px: 1
+
+-- ftd.column:
+width: fill-container
+padding-vertical.px: 50
+spacing.fixed.px: 32
+
+-- ftd.text: $overview.body
+if: { overview.body!= NULL }
+role: $inherited.types.copy-large
+
+-- details.detail-doc:
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: overview
+
+
