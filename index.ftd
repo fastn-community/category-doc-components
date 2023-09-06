@@ -10,8 +10,9 @@ export: slider
 -- import: fastn-community.github.io/category-doc-components/categories/code-block as cb
 export: code-with-preview
 
+-- import: fastn-community.github.io/category-doc-components/categories/preview
 
-
+-- import: fastn-community.github.io/category-doc-components/categories/overview
 
 
 
@@ -27,37 +28,46 @@ cta-primary-text: Preview
 cta-primary-link: /
 cta-secondary-text: Preview
 cta-secondary-link: /
+thumbstamp: $assets.files.images.stamp.svg
 
-The Midnight Business Card is an elegant and professional template featuring a
-dark, midnight-blue color scheme, clean typography, and a well-organized layout
-for essential contact details. Perfect for businesses aiming to convey
-sophistication and professionalism.
+-- preview.preview: title
+subtitle: subtitle
 
-
-
-
-
-
--- carousel.slider:
 
 -- cb.code-with-preview:
 
 \-- ftd.text: Hello
+ -- ftd.text: Hello
+ -- ftd.text: Hello
+ -- ftd.text: Hello
+ -- ftd.text: Hello
+ -- ftd.text: Hello
+ -- ftd.text: Hello
+ -- ftd.text: Hello
+ -- ftd.text: Hello
+ -- ftd.text: Hello
 
--- ftd.text: Hello
+-- preview.image:
+src: $assets.files.images.scenary-1.png
 
 -- end: cb.code-with-preview
 
+-- end: preview.preview
+
+-- preview.preview: hello
+subtitle: hello
 
 -- cb.code-with-preview:
 
 \-- ftd.text: World
 
--- ftd.text: World
+-- preview.image:
+src: $assets.files.images.scenary-1.png
 
 -- end: cb.code-with-preview
 
--- end: carousel.slider
+-- end: preview.preview
 
+-- overview.overview: Properties
 
 -- end: page.page

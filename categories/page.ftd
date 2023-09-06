@@ -15,18 +15,13 @@ children uis:
 colors: $page.colors
 types: $page.types
 
-
 -- ftd.column:
 width: fill-container
 height: fill-container
 background.solid: $inherited.colors.background.base
-
-
--- header.category-header:
-github-url: $page.github-url
-site-name: $page.site-name
-site-url: $page.site-url
-site-logo: $page.site-logo
+padding-horizontal.px: 65
+padding-vertical.px: 50
+spacing.fixed.px: 80
 
 -- obj:
 for: obj in $page.uis

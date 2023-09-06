@@ -2,8 +2,8 @@
 
 -- component hero-section:
 caption title:
-optional body description:
-optional string subtitle:
+string subtitle:
+optional ftd.image-src thumbstamp:
 optional string cta-primary-text:
 optional string cta-primary-link:
 optional string cta-secondary-text:
@@ -13,33 +13,36 @@ optional string cta-secondary-link:
 width: fill-container
 color: $inherited.colors.text
 spacing.fixed.px: 50
-padding-horizontal.px: 65
-padding-vertical.px: 50
 
 -- ftd.column:
-spacing.fixed.px: 20
-width.fixed.percent: 40
+width.fixed.percent: 46
 
 -- ftd.text: $hero-section.title
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
 
 -- ftd.text: $hero-section.subtitle
-role: $inherited.types.fine-print
-
--- end: ftd.column
-
-
--- ftd.column:
-spacing.fixed.px: 20
-width.fixed.percent: 50
-
--- ftd.text: $hero-section.description
-role: $inherited.types.copy-regular
-if: { hero-section.description != NULL }
+role: $inherited.types.copy-small
 
 -- ftd.row:
-spacing.fixed.px: 10
+width: fill-container
+spacing.fixed.px: 16
+margin-top.px: 20
+
+-- ftd.image:
+src: $assets.files.images.icon-github.svg
+width.fixed.px: 24
+
+-- ftd.image:
+src: $assets.files.images.mit-icon.svg
+width.fixed.px: 24
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 16
+margin-top.px: 20
 
 -- button.primary-button: $hero-section.cta-primary-text
 link: $hero-section.cta-primary-link
@@ -53,7 +56,13 @@ if: { hero-section.cta-secondary-text != NULL }
 
 -- end: ftd.column
 
--- end: ftd.row
 
+-- ftd.image:
+if: { hero-section.thumbstamp!= NULL }
+src: $hero-section.thumbstamp
+width.fixed.px: 340
+align-self: center
+
+-- end: ftd.row
 
 -- end: hero-section
