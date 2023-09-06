@@ -1,0 +1,58 @@
+-- component category-header:
+caption github-url:
+optional string site-name:
+
+
+-- header: $category-header.site-name
+
+-- ftd.column:
+link: $category-header.github-url
+open-in-new-tab: true
+
+-- ftd.image:
+src: $assets.files.images.icon-github.svg
+width.fixed.px: 24
+
+-- end: ftd.column
+
+-- end: header
+
+
+-- end: category-header
+
+
+
+
+
+
+
+
+
+
+
+-- component header:
+optional caption site-name:
+children uis:
+
+-- ftd.row:
+width: fill-container
+background.solid: $inherited.colors.background.step-1
+padding-vertical.px: 16
+padding-horizontal.px: 20
+spacing if { header.site-name != NULL }: space-between
+align-content: right
+
+-- ftd.text: $header.site-name
+role: $inherited.types.heading-small
+color: $inherited.colors.text-strong
+if: { header.site-name != NULL }
+
+-- ftd.row:
+spacing.fixed.px: 28
+children: $header.uis
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: header

@@ -1,40 +1,56 @@
--- ds.page: Welcome to doc-site
+-- import: fastn-community.github.io/category-doc-components/categories/page
+-- import: fastn-community.github.io/category-doc-components/categories/section
+-- import: fastn-community.github.io/category-doc-components/categories/carousel
+-- import: fastn-community.github.io/category-doc-components/categories/code-block as cb
 
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
-
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
-
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
-
--- ds.h3: 🚀 Fast Track 
-
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
-
--- ds.h3: 🌟 Whats next?
-
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
-
--- ds.h3: 👀 Want to learn more?
-
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
 
--- ds.h3: 🎯 Used by?
 
-Our all documentation sites uses this `doc-site` theme.
 
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
 
--- ds.h2: Learn fastn and become a pro?
+-- page.page:
+github-url: /
+;; site-name: fastn-community.github.io/midnight-business-card
 
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
--- end: ds.page
+-- section.hero-section: Midnight Business Card
+subtitle: By **Priyanka**
+cta-primary-text: Preview
+cta-primary-link: /
+cta-secondary-text: Preview
+cta-secondary-link: /
+
+The Midnight Business Card is an elegant and professional template featuring a
+dark, midnight-blue color scheme, clean typography, and a well-organized layout
+for essential contact details. Perfect for businesses aiming to convey
+sophistication and professionalism.
+
+
+
+
+
+
+-- carousel.slider:
+
+-- cb.code-with-preview:
+
+\-- ftd.text: Hello
+
+-- ftd.text: Hello
+
+-- end: cb.code-with-preview
+
+
+-- cb.code-with-preview:
+
+\-- ftd.text: World
+
+-- ftd.text: World
+
+-- end: cb.code-with-preview
+
+-- end: carousel.slider
+
+
+-- end: page.page

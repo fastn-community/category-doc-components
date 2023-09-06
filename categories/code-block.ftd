@@ -1,0 +1,24 @@
+-- import: fastn-community.github.io/code-block as cb
+
+-- component code-with-preview:
+children preview:
+body code:
+string lang: ftd
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.column:
+width: fill-container
+children: $code-with-preview.preview
+
+-- end: ftd.column
+
+-- cb.code:
+lang: $code-with-preview.lang
+
+$code-with-preview.code
+
+-- end: ftd.column
+
+-- end: code-with-preview

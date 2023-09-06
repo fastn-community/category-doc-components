@@ -1,0 +1,90 @@
+-- component primary-button:
+caption text:
+string link:
+
+
+-- button: $primary-button.text
+color: $inherited.colors.cta-primary.text
+background.solid: $inherited.colors.cta-primary.base
+on-hover-background.solid: $inherited.colors.cta-primary.hover
+border-color: $inherited.colors.cta-primary.border
+link: $primary-button.link
+
+-- end: primary-button
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component secondary-button:
+caption text:
+string link:
+
+-- button: $secondary-button.text
+color: $inherited.colors.cta-secondary.text
+background.solid: $inherited.colors.cta-secondary.base
+on-hover-background.solid: $inherited.colors.cta-secondary.hover
+border-color: $inherited.colors.cta-secondary.border
+link: $secondary-button.link
+
+-- end: secondary-button
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component button:
+caption text:
+string link:
+ftd.background background:
+ftd.background on-hover-background:
+ftd.color color:
+ftd.color border-color:
+private boolean $hover: false
+
+-- ftd.row:
+spacing.fixed.px: 13
+padding-vertical.rem: 0.75
+padding-horizontal.rem: 1
+border-color: $button.border-color
+border-width.px: 1
+align-content: center
+background: $button.background
+background if { button.hover }: $button.on-hover-background
+color: $button.color
+link: $button.link
+role: $inherited.types.fine-print
+$on-mouse-enter$: $ftd.set-bool($a = $button.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button.hover, v = false)
+
+-- ftd.text: $button.text
+
+-- ftd.image:
+src: $assets.files.images.arrow.svg
+width.fixed.px: 22
+
+-- end: ftd.row
+
+-- end: button

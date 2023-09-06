@@ -1,0 +1,102 @@
+-- record testimonial:
+ftd.image-src image:
+
+
+
+-- integer $current-slide: 1
+
+
+-- void clamp(a,by,min,max):
+integer $a:
+integer by: 1
+integer min: 0
+integer max: 5
+
+a = (((a - min) + by) % (max - min)) + min
+
+
+
+
+-- ftd.ui list testimonial-list:
+
+-- ftd.text: Hello
+
+-- ftd.text: World
+
+
+-- end: testimonial-list
+
+
+
+
+
+-- slider:
+items: $testimonial-list
+
+
+
+-- component slider:
+children items:
+integer max: $length(a = $slider.items)
+integer $current-slide: 0
+
+
+-- ftd.row:
+spacing.fixed.px: 24
+padding-horizontal.px: 12
+align-content: center
+width: fill-container
+max-width.fixed.px: 1080
+align-self: center
+margin-top.px: 40
+
+-- ftd.text: ◀️
+$on-click$: $clamp($a = $slider.current-slide, by = -1, min = 0, max = $slider.max)
+role: $inherited.types.heading-large
+
+-- testimonial-loop:
+ui: $obj
+index: $LOOP.COUNTER
+current-slide: $slider.current-slide
+for: obj in $slider.items
+
+-- ftd.text: ▶️
+$on-click$: $clamp($a = $slider.current-slide, by = 1, min = 0, max = $slider.max)
+role: $inherited.types.heading-large
+
+-- end: ftd.row
+
+-- end: slider
+
+
+
+
+
+-- component testimonial-loop:
+ftd.ui ui:
+integer index:
+integer current-slide:
+
+-- ftd.column:
+padding.px: 40
+if: { testimonial-loop.current-slide == testimonial-loop.index }
+color: $inherited.colors.background.base
+background.solid: $inherited.colors.background.step-2
+border-radius.px: 20
+width: fill-container
+
+-- testimonial-loop.ui:
+
+-- end: ftd.column
+
+-- end: testimonial-loop
+
+
+
+
+
+
+-- integer length(a):
+ftd.ui list a:
+
+len(a)

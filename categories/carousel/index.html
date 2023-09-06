@@ -1,0 +1,552 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<base href="/category-doc-components/">
+<meta content="fastn" name="generator">
+
+<link rel="shortcut icon" href="/-/fastn-community.github.io/category-doc-components/favicon.ico" type="image/x-icon">
+
+<script>
+let __fastn_package_name__ = "fastn-community.github.io/category-doc-components";
+
+</script>
+
+
+<script src="markdown-37D647982059462973339C58D1F7A18E3FDACCF47927ECB9B9B5E23A98008187.js"></script>
+<script src="prism-8FE3A42AD547E2DBBC9FE16BA059F8F1870D613AD0C5B0B013D6205B72A62BAF.js"></script>
+<script src="default-D806A8ECC69EDAFA81A440D82ECE5BE3005B5EED4293BD0A2866EAB42BF4F587.js"></script>
+<link rel="stylesheet" href="prism-73F718B9234C00C5C14AB6A11BF239A103F0B0F93B69CD55CB5C6530501182EB.css">
+
+
+
+<style>
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+!* HTML5 display-role reset for older browsers *!
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}*/
+
+*, :after, :before {
+/*box-sizing: inherit;*/
+box-sizing: border-box;
+text-decoration: none;
+box-sizing: border-box;
+border-top-width: 0px;
+border-bottom-width: 0px;
+border-left-width: 0px;
+border-right-width: 0px;
+border-style: solid;
+height: auto;
+width: auto;
+}
+
+*, pre, div {
+padding: 0;
+margin: 0;
+gap: 0;
+outline: none;
+}
+
+
+body, ol ol, ol ul, ul ol, ul ul {
+margin:0
+}
+pre, table{
+overflow:auto
+}
+html {
+height: 100%;
+width: 100%;
+}
+
+body {
+height: 100%;
+width: 100%;
+}
+
+input, code {
+vertical-align: middle;
+font: inherit;
+}
+pre {
+white-space: break-spaces;
+word-wrap: break-word;
+}
+html {
+-webkit-font-smoothing: antialiased;
+text-rendering: optimizelegibility;
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+}
+iframe {
+border: 0;
+color-scheme: auto;
+}
+
+pre code {
+/*
+This break show-line-number in `ftd.code`
+overflow-x: auto;
+*/
+display: block;
+padding: 0 1em !important;
+}
+
+/* Common styles  */
+.ft_common{
+text-decoration: none;
+box-sizing: border-box;
+border-top-width: 0px;
+border-bottom-width: 0px;
+border-left-width: 0px;
+border-right-width: 0px;
+border-style: solid;
+height: auto;
+width: auto;
+}
+
+/* Common container attributes */
+.ft_row, .ft_column {
+display: flex;
+align-items: start;
+justify-content: start
+}
+
+.full {
+width: 100%;
+height: 100%;
+}
+
+.ft_row {
+display: flex;
+align-items: start;
+justify-content: start;
+flex-direction: row;
+box-sizing: border-box;
+}
+.ft_column {
+display: flex;
+align-items: start;
+justify-content: start;
+flex-direction: column;
+box-sizing: border-box;
+}
+
+.ft_row {
+flex-direction: row;
+}
+
+.ft_column {
+flex-direction: column;
+}
+
+.ft_md ul,
+.ft_md ol{
+margin: 10px 0;
+}
+
+.ft_md ul ul,
+.ft_md ul ol,
+.ft_md ol ul,
+.ft_md ol ol {
+margin: 0;
+}
+
+.ft_md ul li,
+.ft_md ol li,
+.ft_md ul ol li .ft_md ul ul li .ft_md ol ul li .ft_md ol ol li {
+position: relative;
+padding-left: 32px;
+margin: 4px 0;
+}
+
+.ft_md ul {
+list-style: none;
+padding-left: 0;
+}
+
+.ft_md ol {
+list-style: none;
+padding-left: 0;
+counter-reset: item;
+}
+
+.ft_md ol li:before,
+.ft_md ol ol li:before,
+.ft_md ul ol li:before {
+content: counter(item);
+counter-increment: item;
+font-size: 11px;
+line-height: 10px;
+text-align: center;
+padding: 4px 0;
+height: 10px;
+width: 18px;
+border-radius: 10px;
+position: absolute;
+left: 0;
+top: 5px;
+}
+
+.ft_md ul li::before,
+.ft_md ul ul li::before,
+.ft_md ol ul li::before {
+content: "";
+position: absolute;
+width: 6px;
+height: 6px;
+left: 8px;
+top: 10px;
+border-radius: 50%;
+background: #c1c8ce;
+}
+
+a {
+color: #2952a3;
+}
+
+a:visited {
+color: #856ab9;
+}
+
+a:hover {
+color: #24478f;
+}
+
+.ft_md a {
+text-decoration: none;
+}
+
+.ft_md a:visited {
+text-decoration: none;
+}
+
+.ft_md a:hover {
+text-decoration: none;
+}
+
+code {
+padding: 0.1rem 0.25rem;
+border-radius: 4px;
+background-color: #0000000d;
+}
+
+.ft_md blockquote {
+padding: 0.25rem 1rem;
+margin: 1rem 0;
+border-radius: 3px;
+}
+
+.ft_md blockquote > blockquote {
+margin: 0;
+}
+
+
+body.dark code {
+padding: 0.1rem 0.25rem;
+border-radius: 4px;
+background-color: #ffffff1f;
+}
+
+
+body.dark a {
+color: #6498ff
+}
+
+body.dark a:visited {
+color: #b793fb;
+}
+
+
+p {
+margin-block-end: 1em;
+}
+
+h1:only-child {
+margin-block-end: 0.67em
+}
+
+</style>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_row __as-3 __w-1 __pl-4 __pr-5 __mt-6 __mxw-7 __jc-8 __ali-9 __g-10"><div data-id="4" class="__cur-11 __rl-12">◀️</div><comment data-id="5"></comment><comment data-id="6"></comment><div data-id="7" class="ft_column __w-1 __p-13 __br-14 __c-15 __bgc-16"><div data-id="8">Hello</div></div><comment data-id="9"></comment><div data-id="10" class="__cur-11 __rl-12">▶️</div></div></div></body><style id="styles">
+.__w-1 { width: 100%; }
+.__h-2 { height: 100%; }
+.__as-3 { align-self: center; }
+.__pl-4 { padding-left: 12px; }
+.__pr-5 { padding-right: 12px; }
+.__mt-6 { margin-top: 40px; }
+.__mxw-7 { max-width: 1080px; }
+.__jc-8 { justify-content: center; }
+.__ali-9 { align-items: center; }
+.__g-10 { gap: 24px; }
+.__cur-11 { cursor: pointer; }
+.__rl-12 {  font-family: sans-serif; font-size: 50px; font-weight: 400; line-height: 65px; }
+body.mobile .__rl-12 {  font-family: sans-serif; font-size: 36px; font-weight: 400; line-height: 54px; }
+.__p-13 { padding: 40px; }
+.__br-14 { border-radius: 20px; }
+.__c-15 { color: #e7e7e4 !important; }
+body.dark .__c-15 { color: #18181b !important; }
+.__c-15:visited { color: #e7e7e4 !important; }
+body.dark  .__c-15:visited { color: #18181b !important; }
+.__bgc-16 { background-color: #c9cece; }
+body.dark .__bgc-16 { background-color: #585656; }
+</style>
+<script>
+(function() {
+let global = {
+};
+let main = function (parent) {
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "fastn_community_github_io_category_doc_components";
+try {
+let parenti0 = fastn_community_github_io_category_doc_components_categories_carousel___slider(parent, inherited, {
+items: global.fastn_community_github_io_category_doc_components_categories_carousel___testimonial_list
+});
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["main"] = main;
+let fastn_community_github_io_category_doc_components_categories_carousel___length = function (args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "fastn_community_github_io_category_doc_components";
+try {
+let __args__ = {
+a: fastn.mutableList([]),
+...args
+};
+return (len(__args__.a));
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_category_doc_components_categories_carousel___length"] = fastn_community_github_io_category_doc_components_categories_carousel___length;
+let fastn_community_github_io_category_doc_components_categories_carousel___clamp = function (args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "fastn_community_github_io_category_doc_components";
+try {
+let __args__ = {
+by: 1,
+min: 0,
+max: 5,
+...args
+};
+let fastn_utils_val___args___a = fastn_utils.clone((((fastn_utils.getter(__args__.a) - fastn_utils.getter(__args__.min)) + fastn_utils.getter(__args__.by)) % (fastn_utils.getter(__args__.max) - fastn_utils.getter(__args__.min))) + fastn_utils.getter(__args__.min));
+if (!fastn_utils.setter(__args__.a, fastn_utils_val___args___a)) {
+__args__.a = fastn_utils_val___args___a;
+}
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_category_doc_components_categories_carousel___clamp"] = fastn_community_github_io_category_doc_components_categories_carousel___clamp;
+let fastn_community_github_io_category_doc_components_categories_carousel___testimonial_loop = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "fastn_community_github_io_category_doc_components";
+try {
+let __args__ = {
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+return fastn_dom.conditionalDom(parent, [
+__args__.current_slide,
+__args__.index
+], function () {
+return (fastn_utils.getter(__args__.current_slide) == fastn_utils.getter(__args__.index));
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Padding, fastn_dom.Length.Px(40), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(20), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("background").get("base"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("step_2")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_utils.getStaticValue(__args__.ui) (root, inherited);
+}
+]), inherited);
+return rooti0;
+}).getParent();
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_category_doc_components_categories_carousel___testimonial_loop"] = fastn_community_github_io_category_doc_components_categories_carousel___testimonial_loop;
+let fastn_community_github_io_category_doc_components_categories_carousel___slider = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "fastn_community_github_io_category_doc_components";
+try {
+let __args__ = {
+items: fastn.mutableList([]),
+current_slide: fastn.mutable(0),
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+__args__.max = __args__.max ? __args__.max : fastn.formula([__args__.items], function () {
+return fastn_community_github_io_category_doc_components_categories_carousel___length({
+a: __args__.items,
+});
+});
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Row);
+parenti0.setProperty(fastn_dom.PropertyKind.AlignSelf, fastn_dom.AlignSelf.Center, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(12), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(40), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.MaxWidth, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(1080)), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(24)), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, "◀️", inherited);
+rooti0.addEventHandler(fastn_dom.Event.Click, function () {
+fastn_community_github_io_category_doc_components_categories_carousel___clamp({
+a: __args__.current_slide,
+by: - 1,
+min: 0,
+max: __args__.max,
+}, rooti0);
+});
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_large"), inherited);
+},
+function (root, inherited) {
+fastn_utils.getter(__args__.items).forLoop(root, function (root, item, index) {
+let rooti0 = fastn_community_github_io_category_doc_components_categories_carousel___testimonial_loop(root, inherited, {
+ui: item,
+index: index,
+current_slide: __args__.current_slide
+});
+return rooti0;
+});
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, "▶️", inherited);
+rooti0.addEventHandler(fastn_dom.Event.Click, function () {
+fastn_community_github_io_category_doc_components_categories_carousel___clamp({
+a: __args__.current_slide,
+by: 1,
+min: 0,
+max: __args__.max,
+}, rooti0);
+});
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_large"), inherited);
+}
+]), inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_category_doc_components_categories_carousel___slider"] = fastn_community_github_io_category_doc_components_categories_carousel___slider;
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_carousel___testimonial_list", fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, "Hello", inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, "World", inherited);
+}
+]));
+fastn_dom.codeData.availableThemes["coldark-theme.dark"] = "code-theme-9A3284FD117DFF7CFD432FF860A5E14169FA592BC3DA4F5E8A6975143F5EA07F.css";
+fastn_dom.codeData.availableThemes["coldark-theme.light"] = "code-theme-99CD7B013C96C4632F0AEA39AC265387B814AE85A7D33666A4AE4BEFF59016D0.css";
+fastn_dom.codeData.availableThemes["coy-theme"] = "code-theme-B3AEA322EADEDA61F0E219845A0E9C8E73F6345E49362B46E6F52CEE40471248.css";
+fastn_dom.codeData.availableThemes["dracula-theme"] = "code-theme-0CA636E4954E3FC6184FB8000174F8EAA6C61DB10F6A18D74740E6D2032C1A2E.css";
+fastn_dom.codeData.availableThemes["duotone-theme.dark"] = "code-theme-95B9118AFC8631777EEBBD89B2066C3706A6DF3579B14F41AF05564E41CAA09C.css";
+fastn_dom.codeData.availableThemes["duotone-theme.earth"] = "code-theme-6EB6F03F9F578742CA0CD1189693E43A6135D910989ADD88CA3C0D6117EE24D7.css";
+fastn_dom.codeData.availableThemes["duotone-theme.forest"] = "code-theme-256C21B515FC9E77F95D88689A4086B9D9406B7AAE3A273780FE8B8748C5A7D2.css";
+fastn_dom.codeData.availableThemes["duotone-theme.light"] = "code-theme-0800A18B1822D6AFDAF807CF840379A2DB3483A1F058CA29FBCFB3815CA76148.css";
+fastn_dom.codeData.availableThemes["duotone-theme.sea"] = "code-theme-9A45313F167DBD90654BFD5BB3BC0BDF6AE447485C30B0389ADA7B49C069E46A.css";
+fastn_dom.codeData.availableThemes["duotone-theme.space"] = "code-theme-4DD8479BE14A755645BC09FF433FB70EB4CB28F0CBF3CA98DCB71B244B85B194.css";
+fastn_dom.codeData.availableThemes["fastn-theme.dark"] = "code-theme-F614177D3155EA8E915B35A3445175DC7C96D02FBC621F8AFD0FCCC417ED8A43.css";
+fastn_dom.codeData.availableThemes["fastn-theme.light"] = "code-theme-B8645DE281A38A3068C56919DE1BB0511696A1EE8002C5088748DA0BAC0806E6.css";
+fastn_dom.codeData.availableThemes["fire.light"] = "code-theme-A352AF572179AB980583D41BC41ADDBA36C4C17757A34C1C6AAAF2C253E25CE3.css";
+fastn_dom.codeData.availableThemes["gruvbox-theme.dark"] = "code-theme-B68AA27E05B319F04A9CD747AADBF9B9CD791E040DEC519AE9544B4FF65DDBAC.css";
+fastn_dom.codeData.availableThemes["gruvbox-theme.light"] = "code-theme-06E6F84E43C61CB1653D9F4FACD46B7EBCB3CD8A48EFAEF2E5BE3E9E9212D1E6.css";
+fastn_dom.codeData.availableThemes["laserwave-theme"] = "code-theme-0F444C6433C356376F7E92122F6C521FE40242BEC9D9E050359EE1DF4A9D5E6D.css";
+fastn_dom.codeData.availableThemes["material-theme.dark"] = "code-theme-8CCA3D600F91FA55950DF3132F2ABE4BA14CEEA13CD23E157BF6A137762B8452.css";
+fastn_dom.codeData.availableThemes["material-theme.light"] = "code-theme-8C59190F5018F48CCBB063359072EE9053D04923BBC5D1BA52B574E78D8C536A.css";
+fastn_dom.codeData.availableThemes["nightowl-theme"] = "code-theme-88F91252A8A0EA125B4BA2C7B85E65580DB580F1477931AADCB5118E4E69D1CD.css";
+fastn_dom.codeData.availableThemes["one-theme.dark"] = "code-theme-A24DC8F09D03756A62923E8A883CAE3B938D54E2813F0855312D2554DBE97BAD.css";
+fastn_dom.codeData.availableThemes["one-theme.light"] = "code-theme-60E02531E77333F3F1B636C4FC43E976EA9F41AD75268B2DD825C33C68B573A6.css";
+fastn_dom.codeData.availableThemes["vs-theme.dark"] = "code-theme-DC76F700474E809F7BA2D9914793D04881B17EA4699BA9C568C83D32A18B0173.css";
+fastn_dom.codeData.availableThemes["vs-theme.light"] = "code-theme-7852E516BA094B01897820BB3432BE553FE5B28F00E9CA0EBC9DFFB8312EE8BF.css";
+fastn_dom.codeData.availableThemes["ztouch-theme"] = "code-theme-792C7BB9F4C8DFF3E0CBC354D2084DBF71BC5750C2C1357F0E7D936867AFAB62.css";
+
+let main_wrapper = function (parent) {
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.FillContainer, inherited);
+main(parenti0);
+}
+fastn_virtual.hydrate(main_wrapper);
+ftd.post_init();
+})();
+
+window.onload = function() {
+fastn_utils.resetFullHeight();
+fastn_utils.setFullHeight();
+};
+
+</script>
+</html>
