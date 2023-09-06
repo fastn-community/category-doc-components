@@ -1,5 +1,6 @@
--- import: fastn-community.github.io/category-doc-components/categories/page
+-- import: fastn-community.github.io/category-doc-components/categories/site
 export: page
+exposing: page
 
 -- import: fastn-community.github.io/category-doc-components/categories/section
 export: hero-section
@@ -17,7 +18,8 @@ export: code-with-preview
 
 
 
--- page.page:
+
+-- page:
 github-url: /
 ;; site-name: fastn-community.github.io/midnight-business-card
 
@@ -70,4 +72,4 @@ src: $assets.files.images.scenary-1.png
 
 -- overview.overview: Properties
 
--- end: page.page
+-- end: page
