@@ -3,7 +3,7 @@
 -- component hero-section:
 caption title:
 string subtitle:
-optional ftd.image-src thumbstamp:
+ftd.image-src thumbstamp: $assets.files.images.stamp.svg
 optional string cta-primary-text:
 optional string cta-primary-link:
 optional string cta-secondary-text:
