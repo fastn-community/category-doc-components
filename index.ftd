@@ -11,11 +11,13 @@ export: slider
 -- import: fastn-community.github.io/category-doc-components/categories/code-block as cb
 export: code-with-preview
 
--- import: fastn-community.github.io/category-doc-components/categories/preview
+-- import: fastn-community.github.io/category-doc-components/categories/previews
 export: preview
+exposing: preview,image
 
--- import: fastn-community.github.io/category-doc-components/categories/overview
+-- import: fastn-community.github.io/category-doc-components/categories/overviews
 export: overview
+exposing: overview
 
 
 
@@ -33,7 +35,7 @@ cta-secondary-text: Preview
 cta-secondary-link: /
 thumbstamp: $assets.files.images.stamp.svg
 
--- preview.preview: title
+-- preview: title
 subtitle: subtitle
 
 
@@ -50,27 +52,27 @@ subtitle: subtitle
  -- ftd.text: Hello
  -- ftd.text: Hello
 
--- preview.image:
+-- image:
 src: $assets.files.images.scenary-1.png
 
 -- end: cb.code-with-preview
 
--- end: preview.preview
+-- end: preview
 
--- preview.preview: hello
+-- preview: hello
 subtitle: hello
 
 -- cb.code-with-preview:
 
 \-- ftd.text: World
 
--- preview.image:
+-- image:
 src: $assets.files.images.scenary-1.png
 
 -- end: cb.code-with-preview
 
--- end: preview.preview
+-- end: preview
 
--- overview.overview: Properties
+-- overview: Properties
 
 -- end: page
