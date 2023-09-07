@@ -2,7 +2,7 @@
 
 -- component hero-section:
 caption title:
-string subtitle:
+optional string subtitle:
 ftd.image-src thumbstamp: $assets.files.images.stamp.svg
 optional string cta-primary-text:
 optional string cta-primary-link:
@@ -22,6 +22,7 @@ role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
 
 -- ftd.text: $hero-section.subtitle
+if: { hero-section.subtitle != NULL }
 role: $inherited.types.copy-small
 
 -- ftd.row:
