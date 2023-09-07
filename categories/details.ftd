@@ -5,60 +5,20 @@
 width: fill-container
 
 
--- site-doc.component-property: `name`
-type: Caption (`required`)
+-- site-doc.component-property: `site-name`
+type: Caption (`optional`)
 
-It's used to define the person's name for your card component.
+It's used to define the site name for your header component.
 
--- site-doc.component-property: `title`
+-- site-doc.component-property: `site-image`
+type: ftd.image-src  (`optional`)
+
+It's used to define the site image for your header component.
+
+-- site-doc.component-property: `site-url`
 type: String (`required`)
 
-It's used to define the person's business title for your card component.
-
--- site-doc.component-property: `company-name`
-type: String (`required`)
-
-It's used to define the company name for your card component.
-
--- site-doc.component-property: `logo`
-type: ftd.image-src (`optional`)
-
-It's used to define the business logo for your card component.
-
-
--- site-doc.component-property: `contact-1`
-type: String (`optional`)
-
-It's used to define the person's primary contact number (phone number) for your
-card component.
-
-
--- site-doc.component-property: `contact-2`
-type: String (`optional`)
-
-It's used to define the person's alternative contact number (phone number) for
-your card component.
-
--- site-doc.component-property: `email`
-type: String (`optional`)
-
-It's used to define the person's email address for your card component.
-
--- site-doc.component-property: `website`
-type: String (`optional`)
-
-It's used to define any website for your card component.
-
--- site-doc.component-property: `address`
-type: String (`optional`)
-
-It's used to define the person's address for your card component.
-
-
--- site-doc.component-property: `company-slogan`
-type: String (`optional`)
-
-It's used to define the company slogan for your card component.
+It's used to define the site url for your header component.
 
 -- end: ftd.column
 
