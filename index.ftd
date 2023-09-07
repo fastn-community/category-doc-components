@@ -11,10 +11,10 @@ export: slider
 -- import: fastn-community.github.io/category-doc-components/categories/code-block as cb
 export: code-with-preview
 
--- import: fastn-community.github.io/category-doc-components/categories/preview
+-- import: fastn-community.github.io/category-doc-components/categories/previews
 export: preview
 
--- import: fastn-community.github.io/category-doc-components/categories/overview
+-- import: fastn-community.github.io/category-doc-components/categories/overviews
 export: overview
 
 
