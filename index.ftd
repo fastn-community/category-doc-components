@@ -12,9 +12,10 @@ export: slider
 export: code-with-preview
 
 -- import: fastn-community.github.io/category-doc-components/categories/preview
+export: preview
 
 -- import: fastn-community.github.io/category-doc-components/categories/overview
-
+export: overview
 
 
 
