@@ -46,11 +46,11 @@ margin-top.px: 20
 
 -- button.primary-button: $hero-section.cta-primary-text
 link: $hero-section.cta-primary-link
-if: { hero-section.cta-primary-text != NULL }
+if: { hero-section.cta-primary-text != NULL && hero-section.cta-primary-link != NULL}
 
 -- button.secondary-button: $hero-section.cta-secondary-text
 link: $hero-section.cta-secondary-link
-if: { hero-section.cta-secondary-text != NULL }
+if: { hero-section.cta-secondary-text != NULL && hero-section.cta-secondary-link != NULL }
 
 -- end: ftd.row
 

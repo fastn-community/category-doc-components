@@ -1295,9 +1295,10 @@ rooti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(20), in
 rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(16)), inherited);
 rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
 fastn_dom.conditionalDom(root, [
+__args__.cta_primary_link,
 __args__.cta_primary_text
 ], function () {
-return (fastn_utils.getter(__args__.cta_primary_text) !== null);
+return (fastn_utils.getter(__args__.cta_primary_text) !== null && fastn_utils.getter(__args__.cta_primary_link) !== null);
 }, function (root) {
 let rooti0 = fastn_community_github_io_category_doc_components_categories_button__primary_button(root, inherited, {
 text: __args__.cta_primary_text,
@@ -1308,9 +1309,10 @@ return rooti0;
 },
 function (root, inherited) {
 fastn_dom.conditionalDom(root, [
+__args__.cta_secondary_link,
 __args__.cta_secondary_text
 ], function () {
-return (fastn_utils.getter(__args__.cta_secondary_text) !== null);
+return (fastn_utils.getter(__args__.cta_secondary_text) !== null && fastn_utils.getter(__args__.cta_secondary_link) !== null);
 }, function (root) {
 let rooti0 = fastn_community_github_io_category_doc_components_categories_button__secondary_button(root, inherited, {
 text: __args__.cta_secondary_text,
