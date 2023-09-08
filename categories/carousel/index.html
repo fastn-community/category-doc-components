@@ -14,7 +14,7 @@ let __fastn_package_name__ = "fastn-community.github.io/category-doc-components"
 
 <script src="markdown-37D647982059462973339C58D1F7A18E3FDACCF47927ECB9B9B5E23A98008187.js"></script>
 <script src="prism-8FE3A42AD547E2DBBC9FE16BA059F8F1870D613AD0C5B0B013D6205B72A62BAF.js"></script>
-<script src="default-D95EF58B5F9D07866E1765E711C81559309A36E26F332CD3F3CC6ED989732D39.js"></script>
+<script src="default-EA1506CFE5AFEE2A6BE0C75BD4E0ED2F13A26B05AF66AD2D1FC1AF59911FD654.js"></script>
 <link rel="stylesheet" href="prism-73F718B9234C00C5C14AB6A11BF239A103F0B0F93B69CD55CB5C6530501182EB.css">
 <script src="-/fastn-community.github.io/category-doc-components/utils.js"></script>
 
@@ -109,7 +109,6 @@ width: 100%;
 
 input, code {
 vertical-align: middle;
-font: inherit;
 }
 pre {
 white-space: break-spaces;
@@ -244,6 +243,11 @@ border-radius: 50%;
 background: #c1c8ce;
 }
 
+ul {
+/* Added padding to the left to move the bullet marker to the right */
+padding-left: 20px;
+}
+
 a {
 color: #2952a3;
 }
@@ -311,6 +315,14 @@ margin-block-end: 0.67em
 
 table, td, th {
 border: 1px solid;
+}
+
+th {
+padding: 6px;
+}
+
+td {
+padding-left: 6px;
 }
 
 </style>
@@ -433,6 +445,9 @@ max: 5,
 ...args
 };
 let fastn_utils_val___args___a = fastn_utils.clone((((fastn_utils.getter(__args__.a) - fastn_utils.getter(__args__.min)) + fastn_utils.getter(__args__.by)) % (fastn_utils.getter(__args__.max) - fastn_utils.getter(__args__.min))) + fastn_utils.getter(__args__.min));
+if (fastn_utils_val___args___a instanceof fastn.mutableClass) {
+fastn_utils_val___args___a = fastn_utils_val___args___a.get();
+}
 if (!fastn_utils.setter(__args__.a, fastn_utils_val___args___a)) {
 __args__.a = fastn_utils_val___args___a;
 }
