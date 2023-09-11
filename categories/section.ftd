@@ -8,6 +8,8 @@ optional string cta-primary-text:
 optional string cta-primary-link:
 optional string cta-secondary-text:
 optional string cta-secondary-link:
+string github-url:
+optional string license-url:
 
 -- ftd.row:
 width: fill-container
@@ -33,10 +35,13 @@ margin-top.px: 20
 -- ftd.image:
 src: $assets.files.images.icon-github.svg
 width.fixed.px: 24
+link: $hero-section.github-url
 
 -- ftd.image:
+if: { hero-section.license-url != NULL }
 src: $assets.files.images.mit-icon.svg
 width.fixed.px: 24
+link: $hero-section.license-url
 
 -- end: ftd.row
 
