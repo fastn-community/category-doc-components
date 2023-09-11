@@ -23,9 +23,6 @@ exposing: overview
 
 
 -- page:
-github-url: /
-;; site-name: fastn-community.github.io/midnight-business-card
-
 
 -- section.hero-section: Midnight Business Card
 subtitle: By **Priyanka**

@@ -3,10 +3,6 @@
 -- import: fastn-community.github.io/category-doc-components/categories/color-scheme as cs
 
 -- component page:
-optional caption site-name:
-optional string site-url:
-optional ftd.image-src site-logo:
-string github-url:
 ftd.color-scheme colors: $cs.main
 children uis:
 
