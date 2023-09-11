@@ -7,13 +7,12 @@ optional caption site-name:
 optional string site-url:
 optional ftd.image-src site-logo:
 string github-url:
-ftd.type-data types: $inherited.types
 ftd.color-scheme colors: $cs.main
 children uis:
 
 -- ftd.document:
 colors: $page.colors
-types: $page.types
+types: $inherited.types
 
 -- ftd.column:
 width: fill-container
