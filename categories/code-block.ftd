@@ -12,7 +12,6 @@ spacing.fixed.px: 28
 -- ftd.column:
 width: fill-container
 border-radius.px: 5
-max-height.fixed.px: 300
 children: $code-with-preview.preview
 
 -- end: ftd.column
