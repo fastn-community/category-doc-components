@@ -4,22 +4,64 @@
 -- ftd.column:
 width: fill-container
 
-
--- site-doc.component-property: `site-name`
-type: Caption (`optional`)
+-- component-property: `site-name`
+type: caption (`optional`)
 
 It's used to define the site name for your header component.
 
--- site-doc.component-property: `site-image`
+-- component-property: `site-image`
 type: ftd.image-src  (`optional`)
 
 It's used to define the site image for your header component.
 
--- site-doc.component-property: `site-url`
-type: String (`required`)
+-- component-property: `site-url`
+type: string (`required`)
 
 It's used to define the site url for your header component.
 
 -- end: ftd.column
 
 -- end: detail-doc
+
+
+
+
+
+-- component component-property:
+optional string type:
+caption title:
+body body:
+
+-- ftd.column:
+width: fill-container
+margin-bottom.px: 32
+
+-- ftd.row:
+align-content: center
+
+-- ftd.text: $component-property.title
+role: $inherited.types.heading-small
+color: $inherited.colors.text
+
+-- ftd.text: :
+if: { component-property.type != NULL }
+color: $inherited.colors.custom.seven
+role: $inherited.types.heading-tiny
+padding-right.px: 12
+
+-- ftd.text: $component-property.type
+color: $inherited.colors.custom.nine
+role: $inherited.types.heading-tiny
+
+-- end: ftd.row
+
+-- ftd.text: 
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-top.px: 12
+
+$component-property.body
+
+-- end: ftd.column
+
+-- end: component-property
