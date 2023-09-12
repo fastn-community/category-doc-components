@@ -4,10 +4,7 @@ optional string subtitle:
 children uis:
 
 -- ftd.column:
-padding.px: 40
 color: $inherited.colors.text-strong
-background.solid: $inherited.colors.background.step-2
-border-radius.px: 20
 width: fill-container
 
 -- ftd.text: $preview.title
@@ -20,8 +17,16 @@ if: { preview.subtitle != NULL }
 role: $inherited.types.copy-small
 margin-bottom.px: 16
 
+-- ftd.column:
+padding.px: 40
+color: $inherited.colors.text-strong
+background.solid: $inherited.colors.background.step-2
+border-radius.px: 20
+
 -- obj:
 for: obj in $preview.uis
+
+-- end: ftd.column
 
 -- end: ftd.column
 
