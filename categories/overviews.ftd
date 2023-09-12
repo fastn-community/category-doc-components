@@ -3,6 +3,7 @@
 -- component overview:
 caption title:
 optional body body:
+children uis:
 
 -- ftd.column:
 width: fill-container
@@ -24,7 +25,8 @@ spacing.fixed.px: 32
 if: { overview.body!= NULL }
 role: $inherited.types.copy-large
 
--- details.detail-doc:
+-- obj:
+for: obj in $overview.uis
 
 -- end: ftd.column
 
