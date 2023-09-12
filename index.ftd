@@ -16,7 +16,7 @@ export: preview
 exposing: preview,image
 
 -- import: fastn-community.github.io/category-doc-components/categories/overviews
-export: overview
+export: overview,component-property
 exposing: overview
 
 
@@ -25,7 +25,7 @@ exposing: overview
 -- page:
 
 -- section.hero-section: Midnight Business Card
-subtitle: By **Priyanka**
+creator-name: Priyanka
 cta-primary-text: Preview
 cta-primary-link: /
 cta-secondary-text: Preview
