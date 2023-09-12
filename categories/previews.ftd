@@ -22,6 +22,7 @@ padding.px: 40
 color: $inherited.colors.text-strong
 background.solid: $inherited.colors.background.step-2
 border-radius.px: 20
+width: fill-container
 
 -- obj:
 for: obj in $preview.uis

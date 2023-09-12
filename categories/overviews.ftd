@@ -35,3 +35,48 @@ for: obj in $overview.uis
 -- end: overview
 
 
+
+
+
+
+
+
+
+
+-- component component-property:
+optional string type:
+caption title:
+body body:
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.row:
+align-content: center
+
+-- ftd.text: $component-property.title
+role: $inherited.types.heading-small
+color: $inherited.colors.text
+
+-- ftd.text: :
+if: { component-property.type != NULL }
+color: $inherited.colors.custom.seven
+role: $inherited.types.heading-tiny
+padding-right.px: 12
+
+-- ftd.text: $component-property.type
+color: $inherited.colors.custom.nine
+role: $inherited.types.heading-tiny
+
+-- end: ftd.row
+
+-- ftd.text: 
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-top.px: 12
+
+$component-property.body
+
+-- end: ftd.column
+
+-- end: component-property

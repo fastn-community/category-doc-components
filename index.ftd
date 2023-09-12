@@ -16,7 +16,7 @@ export: preview
 exposing: preview,image
 
 -- import: fastn-community.github.io/category-doc-components/categories/overviews
-export: overview
+export: overview,component-property
 exposing: overview
 
 
