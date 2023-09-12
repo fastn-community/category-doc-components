@@ -25,7 +25,7 @@ exposing: overview
 -- page:
 
 -- section.hero-section: Midnight Business Card
-subtitle: By **Priyanka**
+creator-name: Priyanka
 cta-primary-text: Preview
 cta-primary-link: /
 cta-secondary-text: Preview
