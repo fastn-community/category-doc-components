@@ -32,10 +32,19 @@ spacing.fixed.px: 4
 
 -- ftd.text: By
 
+;; TODO: Remove the if condition once `link` fix is done
 -- ftd.text: $hero-section.creator-name
+if: { hero-section.creator-url != NULL }
 color: $inherited.colors.text-strong
-link if { hero-section.creator-url != NULL }: $hero-section.creator-url
+link: $hero-section.creator-url
 style: bold
+
+;; TODO: Remove the whole element once `link` fix is done
+-- ftd.text: $hero-section.creator-name
+if: { hero-section.creator-url == NULL }
+color: $inherited.colors.text-strong
+style: bold
+
 -- end: ftd.row
 
 
