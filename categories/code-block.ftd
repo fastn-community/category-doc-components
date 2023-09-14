@@ -1,18 +1,42 @@
 -- import: fastn-community.github.io/code-block as cb
 
+
+
+
 -- component code-with-preview:
+optional caption title:
+optional string subtitle:
 children preview:
 body code:
 string lang: ftd
 
 -- ftd.column:
+color: $inherited.colors.text-strong
 width: fill-container
-spacing.fixed.px: 28
+
+-- ftd.text: $code-with-preview.title
+if: { code-with-preview.title != NULL }
+role: $inherited.types.heading-small
+margin-bottom.px: 8
+
+-- ftd.text: $code-with-preview.subtitle
+if: { code-with-preview.subtitle != NULL }
+role: $inherited.types.copy-small
+margin-bottom.px: 16
 
 -- ftd.column:
 width: fill-container
-border-radius.px: 5
+spacing.fixed.px: 28
+padding.px: 40
+color: $inherited.colors.text-strong
+background.solid: $inherited.colors.background.overlay
+border-radius.px: 20
+
+-- ftd.column:
+width: fill-container
 children: $code-with-preview.preview
+border-width.px: 1
+border-color: $inherited.colors.border-strong
 
 -- end: ftd.column
 
@@ -21,6 +45,8 @@ max-height.fixed.px: 300
 lang: $code-with-preview.lang
 
 $code-with-preview.code
+
+-- end: ftd.column
 
 -- end: ftd.column
 
