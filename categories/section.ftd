@@ -2,6 +2,7 @@
 
 -- component hero-section:
 caption title:
+optional body subtitle:
 optional string creator-name:
 ftd.image-src thumbstamp: $assets.files.images.stamp.svg
 optional string cta-primary-text:
@@ -48,6 +49,13 @@ style: bold
 -- end: ftd.row
 
 
+-- ftd.text: $hero-section.subtitle
+if: { hero-section.subtitle != NULL }
+role: $inherited.types.fine-print
+color: $inherited.colors.text-strong
+margin-top.px: 20
+
+
 -- ftd.row:
 width: fill-container
 spacing.fixed.px: 16
@@ -85,7 +93,7 @@ if: { hero-section.cta-secondary-text != NULL && hero-section.cta-secondary-link
 
 
 -- ftd.image:
-if: { hero-section.thumbstamp!= NULL }
+if: { hero-section.thumbstamp != NULL }
 src: $hero-section.thumbstamp
 width.fixed.px: 340
 align-self: center
